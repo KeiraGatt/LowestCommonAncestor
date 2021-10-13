@@ -8,7 +8,7 @@ The unit testing for Java was done using JUnit Tests. Code coverage was analysed
 The Python implementation was developed in PyCharm, a language & enviroment I am new to.
 The unit testing framework used was unittest. Code coverage was analysed using Coverage.py. As of 12.10.21 coverage is 100%.
 
-Current functionlity of both Java & Python implementations:
+Current functionality of both Java & Python implementations:
 
 1. Calculate LCA of 2 valid keys.
 2. Insert key into tree.
