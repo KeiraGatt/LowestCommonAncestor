@@ -1,7 +1,10 @@
 /*
  * Keira Gatt
  * Student #: 19334557
- * Date: 05.10.21
+ * Date: 05.10.21 (Version 1)
+ *
+ * Added Tests to check if current implementation handles DAGs
+ * Date: 27.10.21
  * 
  */
 
@@ -158,5 +161,31 @@ class LCATest {
         
 	}
 	
+	/*
+	 * Test if LCA implementation can already handle DAGs:
+	 * 
+	 * Return:
+	 * 
+	 * LCA of the 2 keys given
+	 * If tree is empty or keys do not exist in tree return -1
+	 * 
+	 */
+	@Test
+	void testLCA_DAG() {
+		
+		LCA tree  = new LCA();
+		
+        	tree.insert(1);		// Note there is no functionality in current implementation to specify direction
+        	tree.insert(2);		// as this implementation uses an undirected graph
+        	tree.insert(3);
+        	tree.insert(4);
+        	tree.insert(5);
+        	tree.insert(6);
+        	tree.insert(7);
+        
+        	assertEquals("LCA() ", 1, tree.lca(4,7));	// The LCA of 4 & 7 should give 1 & 2
+        	assertEquals("LCA() ", 2, tree.lca(4,7));	// The current implementation outputs 4
+        
+	}
 
 }
