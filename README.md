@@ -30,6 +30,7 @@ Functionality:
 2. Insert key into graph.
 3. Calculate size of subgraph for given key.
 4. Print graph.
+5. Check if a graph is cyclic.
 
 
 
